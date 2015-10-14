@@ -1,9 +1,8 @@
 Meteor.methods({
 
-  askWatson: function(question) {
+  askWatson: function (question) {
     // Да простит меня Великий Ктулху за этот аццкий трэш!
     check(question, String);
-    this.unblock();
 
     // Делаем запросик к демке с Watson QA. Да-да, пока только так.
     var response = HTTP.post('http://watson-qa-demo.mybluemix.net/', {
@@ -22,7 +21,7 @@ Meteor.methods({
 
     // Тащим содержимое первого тега script.
     // Почему именно с первого? Да так, прост.
-    var code = $('script').first().text();
+    const code = $('script').first().text();
 
     // ОХТЫЖЙОБАНЫЙТЫНАХУЙ (O_o)/
     // ЩИТО ЭНТО?!
