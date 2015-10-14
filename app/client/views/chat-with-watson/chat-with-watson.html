@@ -1,0 +1,15 @@
+<template name="ChatWithWatson">
+  <form data-action="ask-watson">
+    <div class="form-group">
+      <label for="question">Question:</label>
+      <input type="text" class="form-control" id="question" placeholder="How do I quit smoking?">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Ask</button>
+  </form>
+  {{# with answer}}
+    <hr>
+    {{# each evidencelist}}
+      {{> EvidenceDetails}}
+    {{/ each}}
+  {{/ with}}
+</template>
