@@ -22,3 +22,5 @@ check
 mrt:cheerio
 reactive-var
 bootswatch:yeti
+jss:bootstrap-add-clear
+fortawesome:fontawesome
